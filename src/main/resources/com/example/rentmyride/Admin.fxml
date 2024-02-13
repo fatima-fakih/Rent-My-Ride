@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="main_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="849.0" prefWidth="1276.0" styleClass="gradient-background" stylesheets="@styles2.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rentmyride.AdminController">
+   <children>
+      <VBox layoutX="6.0" layoutY="71.0" prefHeight="786.0" prefWidth="380.0" styleClass="container" stylesheets="@styles2.css">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="340.0">
+               <image>
+                  <Image url="@../../../car_images/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="18.0" right="5.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <AnchorPane prefHeight="232.0" prefWidth="380.0" styleClass="nav-form" stylesheets="@styles2.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="115.0" fitWidth="120.0" layoutX="14.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../car_images/download.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="170.0" layoutY="153.0" prefHeight="39.0" prefWidth="141.0" text="Available Cars" textAlignment="CENTER" textFill="#fffdfd" wrapText="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="home_availableCars" alignment="TOP_RIGHT" layoutX="181.0" layoutY="26.0" prefHeight="39.0" prefWidth="141.0" text="0" textAlignment="CENTER" textFill="#fffdfd" wrapText="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="265.0" prefHeight="232.0" prefWidth="380.0" styleClass="nav-form" stylesheets="@styles2.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="115.0" fitWidth="132.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../car_images/download20%.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="155.0" layoutY="140.0" prefHeight="25.0" prefWidth="148.0" text="Total Income " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="home_totalIncome" alignment="TOP_RIGHT" layoutX="188.0" layoutY="13.0" prefHeight="39.0" prefWidth="141.0" text="\$0.0" textAlignment="CENTER" textFill="#fffdfd" wrapText="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <HBox prefHeight="64.0" prefWidth="1276.0" stylesheets="@styles2.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="92.0" prefWidth="263.0" text="ADMIN DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Pane maxHeight="-Infinity" prefHeight="2.0" prefWidth="805.0" styleClass="line-color" stylesheets="@styles2.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="32.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Pane>
+            <ImageView id="admin page" fx:id="homeimgview" fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="gradient-background">
+               <image>
+                  <Image url="@../../../car_images/home_512px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="settingimgview" fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../car_images/settings_512px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="411.0" layoutY="71.0" prefHeight="786.0" prefWidth="862.0">
+         <children>
+            <Pane fx:id="addcarform" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="270.0" prefWidth="840.0" styleClass="container" stylesheets="@styles2.css">
+               <VBox.margin>
+                  <Insets left="12.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="26.0" prefHeight="26.0" prefWidth="104.0" text="Car ID :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="caridtextfeild" layoutX="118.0" layoutY="27.0" styleClass="textfield" stylesheets="@styles2.css" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="69.0" prefHeight="26.0" prefWidth="104.0" text="Brand  :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Nametextfeild" layoutX="118.0" layoutY="70.0" styleClass="textfield" stylesheets="@styles2.css" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="107.0" prefHeight="26.0" prefWidth="104.0" text="Model :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="modeltextfeild" layoutX="118.0" layoutY="108.0" styleClass="textfield" stylesheets="@styles2.css" />
+                  <AnchorPane layoutX="321.0" layoutY="12.0" prefHeight="216.0" prefWidth="181.0" styleClass="white-bg" stylesheets="@styles2.css">
+                     <children>
+                        <ImageView fx:id="carimportimgview" fitHeight="180.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Button fx:id="importbtn" layoutY="180.0" mnemonicParsing="false" onAction="#availableCarImportImage" prefHeight="35.0" prefWidth="181.0" stylesheets="@styles2.css" text="Import" textFill="WHITE">
+                           <font>
+                              <Font name="Andalus" size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="button-container-mouse-moved" />
+                              <String fx:value="button-container-mouse-moved" />
+                              <String fx:value="delete-btn" />
+                              <String fx:value="add" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="150.0" prefHeight="26.0" prefWidth="104.0" text="Price :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Pricetextfeild" layoutX="118.0" layoutY="150.0" styleClass="textfield" stylesheets="@styles2.css" />
+                  <ComboBox fx:id="type" layoutX="118.0" layoutY="194.0" onAction="#availableCarStatusList" prefHeight="26.0" prefWidth="162.0" promptText="Choose" styleClass="textfield" stylesheets="@styles2.css" />
+                  <CheckBox fx:id="availablecheckbox" alignment="CENTER" layoutX="578.0" layoutY="22.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" text="Available">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="194.0" prefHeight="26.0" prefWidth="104.0" text="Type   :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="555.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="158.0" prefWidth="271.0" stylesheets="@styles2.css">
+                     <styleClass>
+                        <String fx:value="myPane" />
+                        <String fx:value="container" />
+                     </styleClass>
+                     <children>
+                        <Button fx:id="insertbtn" layoutX="21.0" layoutY="90.0" mnemonicParsing="false" onAction="#availableCarAdd" prefHeight="39.0" prefWidth="89.0" styleClass="add-btn" stylesheets="@styles2.css" text="Insert">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="clearbtn" layoutX="156.0" layoutY="90.0" mnemonicParsing="false" onAction="#availableCarClear" prefHeight="39.0" prefWidth="89.0" styleClass="clear-btn" stylesheets="@styles2.css" text="Clear">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Updatebtn" layoutX="21.0" layoutY="23.0" mnemonicParsing="false" onAction="#availableCarUpdate" prefHeight="39.0" prefWidth="89.0" stylesheets="@styles2.css" text="Update">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="add-btn" />
+                              <String fx:value="update-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="delletebtn" layoutX="156.0" layoutY="23.0" mnemonicParsing="false" onAction="#availableCarDelete" prefHeight="39.0" prefWidth="89.0" stylesheets="@styles2.css" text="Delete">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="20.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="clear-btn" />
+                              <String fx:value="delete-btn" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="availablecarsPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="290.0" prefWidth="840.0" styleClass="container" stylesheets="@styles2.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="132.0" text="Cars" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="availableCars_tableView" layoutX="20.0" layoutY="49.0" onMouseClicked="#availableCarSelect" onSort="#availableCarShowListData" prefHeight="200.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn fx:id="availableCars_col_carId" prefWidth="114.0" text="carId" />
+                        <TableColumn fx:id="availableCars_col_brand" prefWidth="110.0" text="carname" />
+                        <TableColumn fx:id="availableCars_col_model" prefWidth="143.0" text="model" />
+                        <TableColumn fx:id="availableCars_col_price" minWidth="0.0" prefWidth="119.0" text="baseprice" />
+                        <TableColumn fx:id="availableCars_col_status" prefWidth="95.0" text="available" />
+                        <TableColumn fx:id="availableCars_col_imgPath" prefWidth="216.0" text="ImagePath" />
+                     </columns>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="reservationPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="290.0" prefWidth="840.0" styleClass="container" stylesheets="@styles2.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="183.0" text="Reservation" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="reservationtbl" layoutX="20.0" layoutY="49.0" onSort="#reservationsShowListData" prefHeight="200.0" prefWidth="800.0">
+                     <columns>
+                        <TableColumn fx:id="tblreservationId" prefWidth="94.0" text="Id" />
+                        <TableColumn fx:id="tbluserid" prefWidth="81.0" text="UserId" />
+                        <TableColumn fx:id="tblcardNumber" prefWidth="110.0" text="CardId" />
+                        <TableColumn fx:id="tblcarid" prefWidth="120.0" text="carId" />
+                        <TableColumn fx:id="tblrentprice" minWidth="0.0" prefWidth="126.0" text="rent price" />
+                        <TableColumn fx:id="tbldatetaken" minWidth="0.0" prefWidth="130.0" text="dateTaken" />
+                        <TableColumn fx:id="tblduration" minWidth="0.0" prefWidth="138.0" text="Duration" />
+                     </columns>
+                     <padding>
+                        <Insets bottom="12.0" />
+                     </padding>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="12.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

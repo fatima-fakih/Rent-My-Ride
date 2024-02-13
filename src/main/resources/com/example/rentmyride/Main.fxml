@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane fx:id="rootPane" styleClass="gradient-background" stylesheets="@styles.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rentmyride.MainController">
+    <children>
+
+        <ImageView fx:id="logoImage" layoutX="450" layoutY="200" fitHeight="150" fitWidth="400" pickOnBounds="true" preserveRatio="true" />
+
+        <HBox alignment="CENTER" layoutX="180.0" layoutY="180.0" spacing="40.0" />
+         <Button fx:id="registerButton" layoutX="688.0" layoutY="350.0" minWidth="100.0" onAction="#handleRegisterButtonAction" prefHeight="40.0" text="Register" textAlignment="CENTER"
+                 style="-fx-background-color: #D4AF37; -fx-font-size: 18pt; -fx-font-weight: bold; -fx-padding: 0 10 0 10;">
+
+         </Button>
+         <Button fx:id="loginButton" layoutX="523.0" layoutY="350.0" minWidth="100.0" onAction="#handleLoginButtonAction" prefHeight="40.0" text="Login" textAlignment="CENTER"
+                 style="-fx-background-color: #D4AF37; -fx-font-size: 18pt; -fx-font-weight: bold; -fx-padding: 0 10 0 10;">
+
+         </Button>
+    </children>
+</AnchorPane>

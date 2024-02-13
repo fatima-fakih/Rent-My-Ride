@@ -1,0 +1,45 @@
+/* Set the background color */
+.gradient-background {
+    -fx-background-color: linear-gradient(to bottom right, #1E1F2A, #0F0F12, #0A0C15, #060A17, #02071A, #02051C, #02031E, #020120);
+
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-padding: 0 20;
+       -fx-min-width: 800;
+       -fx-max-width: 1000;
+       -fx-min-height: 600;
+       -fx-max-height: 700;
+}
+
+
+/* Set the padding of the content inside the scroll pane */
+.scroll-pane > .viewport {
+    -fx-background-color: linear-gradient(to bottom right, #1E1F2A, #0F0F12, #0A0C15, #060A17, #02071A, #02051C, #02031E, #020120);
+    -fx-padding: 20px;
+}
+/* Style the buttons */
+.button {
+        -fx-background-color: transparent;
+        -fx-text-fill: white;
+        -fx-font-size: 13pt;
+        -fx-font-weight: bold;
+        -fx-font-family: 'Montserrat';
+        -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 4,0,0,1 );
+        -fx-padding: 20 0 0 0;
+}
+
+.button:hover {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.6) , 4,0,0,1 );
+}
+
+/* Set the font color and weight for the labels */
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.my-choicebox .list-cell {
+    -fx-text-fill: #1E1F2A;
+}
